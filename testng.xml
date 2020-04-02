@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestApis">
-  <test thread-count="5" name="TestApi_01">
+<suite name="TestAPI">
+  <test thread-count="5" name="TestAPI_01">
     <classes>
       <class name="com.test.basttest.TestApi"/>
+      <class name="com.test.pagestest.TestApi"/>
     </classes>
-  </test> <!-- TestApi_01 -->
-</suite> <!-- TestApis -->
+  </test> <!-- TestAPI_01 -->
+</suite> <!-- TestAPI -->

@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6777" started-at="2020-04-02T16:46:19Z" finished-at="2020-04-02T16:46:26Z">
+  <suite name="TestAPI" duration-ms="7681" started-at="2020-04-02T17:53:10Z" finished-at="2020-04-02T17:53:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6777" started-at="2020-04-02T16:46:19Z" finished-at="2020-04-02T16:46:26Z">
+    <test name="TestAPI_01" duration-ms="7681" started-at="2020-04-02T17:53:10Z" finished-at="2020-04-02T17:53:18Z">
       <class name="com.test.basttest.TestApi">
-        <test-method status="PASS" signature="validateStatusCode()[pri:0, instance:com.test.basttest.TestApi@46d56d67]" name="validateStatusCode" duration-ms="5698" started-at="2020-04-02T22:16:19Z" finished-at="2020-04-02T22:16:25Z">
+        <test-method status="PASS" signature="validateStatusCode()[pri:0, instance:com.test.basttest.TestApi@d8355a8]" name="validateStatusCode" duration-ms="4402" started-at="2020-04-02T23:23:10Z" finished-at="2020-04-02T23:23:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateStatusCode -->
-        <test-method status="PASS" signature="validateStatusCode1()[pri:0, instance:com.test.basttest.TestApi@46d56d67]" name="validateStatusCode1" duration-ms="968" started-at="2020-04-02T22:16:25Z" finished-at="2020-04-02T22:16:26Z">
+        <test-method status="PASS" signature="validateStatusCode1()[pri:0, instance:com.test.basttest.TestApi@d8355a8]" name="validateStatusCode1" duration-ms="1323" started-at="2020-04-02T23:23:15Z" finished-at="2020-04-02T23:23:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateStatusCode1 -->
       </class> <!-- com.test.basttest.TestApi -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.test.pagestest.TestApi">
+        <test-method status="PASS" signature="testGetStatus()[pri:0, instance:com.test.pagestest.TestApi@4501b7af]" name="testGetStatus" duration-ms="1877" started-at="2020-04-02T23:23:16Z" finished-at="2020-04-02T23:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStatus -->
+      </class> <!-- com.test.pagestest.TestApi -->
+    </test> <!-- TestAPI_01 -->
+  </suite> <!-- TestAPI -->
 </testng-results>
