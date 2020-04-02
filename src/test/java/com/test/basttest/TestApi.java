@@ -9,7 +9,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class TestApi {
 	
-	@Test
+	@Test(enabled=false)
 	public void validateStatusCode() {
 		
 		RestAssured.baseURI="http://restapi.demoqa.com/utilities/weatherfull/city";
@@ -17,7 +17,7 @@ public class TestApi {
 		Response response =httpRequest.request(Method.GET,"/Hyderabad");
 		System.out.println(response.getBody().asString());
 	}
-	@Test
+	@Test(enabled=false)
 	public void validateStatusCode1() {
 		
 		RestAssured.baseURI="https://blog.hubspot.com/marketing";

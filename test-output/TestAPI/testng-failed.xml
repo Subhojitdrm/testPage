@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestAPI]">
+  <test name="TestAPI_01(failed)">
+    <classes>
+      <class name="com.test.pagestest.TestApi_02">
+        <methods>
+          <include name="testTheStatus"/>
+        </methods>
+      </class> <!-- com.test.pagestest.TestApi_02 -->
+    </classes>
+  </test> <!-- TestAPI_01(failed) -->
+</suite> <!-- Failed suite [TestAPI] -->
