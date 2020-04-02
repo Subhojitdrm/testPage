@@ -1,109 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="2" total="5" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestAPI" duration-ms="8169" started-at="2020-04-02T18:10:44Z" finished-at="2020-04-02T18:10:52Z">
+  <suite name="TestAPI" duration-ms="3751" started-at="2020-04-02T21:07:56Z" finished-at="2020-04-02T21:08:00Z">
     <groups>
     </groups>
-    <test name="TestAPI_01" duration-ms="8169" started-at="2020-04-02T18:10:44Z" finished-at="2020-04-02T18:10:52Z">
-      <class name="com.test.pagestest.TestApi_02">
-        <test-method status="FAIL" signature="testFacebookStatus()[pri:0, instance:com.test.pagestest.TestApi_02@523884b2]" name="testFacebookStatus" duration-ms="1761" started-at="2020-04-02T23:40:50Z" finished-at="2020-04-02T23:40:52Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [400] but found [200]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at org.testng.Assert.assertEquals(Assert.java:398)
-	at com.test.pagestest.TestApi_02.testFacebookStatus(TestApi_02.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test name="TestAPI_01" duration-ms="3751" started-at="2020-04-02T21:07:56Z" finished-at="2020-04-02T21:08:00Z">
+      <class name="com.test.pagestest.PostRequest">
+        <test-method status="PASS" signature="testPostRequest()[pri:0, instance:com.test.pagestest.PostRequest@46d56d67]" name="testPostRequest" duration-ms="3703" started-at="2020-04-03T02:37:57Z" finished-at="2020-04-03T02:38:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFacebookStatus -->
-        <test-method status="FAIL" signature="testTheStatus()[pri:0, instance:com.test.pagestest.TestApi_02@523884b2]" name="testTheStatus" duration-ms="386" started-at="2020-04-02T23:40:52Z" finished-at="2020-04-02T23:40:52Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [404]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at org.testng.Assert.assertEquals(Assert.java:398)
-	at com.test.pagestest.TestApi_02.testTheStatus(TestApi_02.java:19)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTheStatus -->
-      </class> <!-- com.test.pagestest.TestApi_02 -->
-      <class name="com.test.pagestest.TestApi">
-        <test-method status="PASS" signature="testGetStatus()[pri:0, instance:com.test.pagestest.TestApi@59fa1d9b]" name="testGetStatus" duration-ms="5935" started-at="2020-04-02T23:40:44Z" finished-at="2020-04-02T23:40:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetStatus -->
-      </class> <!-- com.test.pagestest.TestApi -->
+        </test-method> <!-- testPostRequest -->
+      </class> <!-- com.test.pagestest.PostRequest -->
     </test> <!-- TestAPI_01 -->
   </suite> <!-- TestAPI -->
 </testng-results>

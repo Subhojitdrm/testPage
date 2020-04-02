@@ -3,9 +3,10 @@
 <suite name="TestAPI">
   <test thread-count="5" name="TestAPI_01">
     <classes>
-      <class name="com.test.basttest.TestApi"/>
+      <!-- <class name="com.test.basttest.TestApi"/>
       <class name="com.test.pagestest.TestApi"/>
-      <class name="com.test.pagestest.TestApi_02"/>
+      <class name="com.test.pagestest.TestApi_02"/>-->
+      <class name="com.test.pagestest.PostRequest"/>
     </classes>
   </test> <!-- TestAPI_01 -->
 </suite> <!-- TestAPI -->

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestAPI">
-              <span class="suite-name border-failed">TestAPI</span>
+              <span class="suite-name border-passed">TestAPI</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestAPI" class="hide-methods failed suite-TestAPI"> (hide)</a> <!-- hide-methods failed suite-TestAPI -->
-                      <a href="#" panel-name="suite-TestAPI" class="show-methods failed suite-TestAPI"> (show)</a> <!-- show-methods failed suite-TestAPI -->
-                    </span>
-                    <div class="method-list-content failed suite-TestAPI">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestAPI" title="com.test.pagestest.TestApi_02" hash-for-method="testFacebookStatus">testFacebookStatus</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestAPI" title="com.test.pagestest.TestApi_02" hash-for-method="testTheStatus">testTheStatus</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TestAPI -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,7 +102,7 @@
                     <div class="method-list-content passed suite-TestAPI">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestAPI" title="com.test.pagestest.TestApi" hash-for-method="testGetStatus">testGetStatus</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAPI" title="com.test.pagestest.PostRequest" hash-for-method="testPostRequest">testPostRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestAPI -->
@@ -136,47 +117,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestAPI" class="panel TestAPI">
-          <div class="suite-TestAPI-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.test.pagestest.TestApi_02</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testFacebookStatus">
-                  </a> <!-- testFacebookStatus -->
-                  <span class="method-name">testFacebookStatus</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
-	at com.test.pagestest.TestApi_02.testFacebookStatus(TestApi_02.java:26)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTheStatus">
-                  </a> <!-- testTheStatus -->
-                  <span class="method-name">testTheStatus</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at com.test.pagestest.TestApi_02.testTheStatus(TestApi_02.java:19)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestAPI-class-failed -->
           <div class="suite-TestAPI-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.pagestest.TestApi</span>
+              <span class="class-name">com.test.pagestest.PostRequest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testGetStatus">
-                  </a> <!-- testGetStatus -->
-                  <span class="method-name">testGetStatus</span>
+                  <a name="testPostRequest">
+                  </a> <!-- testPostRequest -->
+                  <span class="method-name">testPostRequest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,9 +144,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestAPI&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestAPI_01&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.test.basttest.TestApi&quot;/&gt;
-      &lt;class name=&quot;com.test.pagestest.TestApi&quot;/&gt;
-      &lt;class name=&quot;com.test.pagestest.TestApi_02&quot;/&gt;
+      &lt;class name=&quot;com.test.pagestest.PostRequest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestAPI_01 --&gt;
 &lt;/suite&gt; &lt;!-- TestAPI --&gt;
@@ -209,7 +158,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestAPI_01 (3 classes)</span>
+                <span class="test-name">TestAPI_01 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,24 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testGetStatus')
-data.setCell(0, 2, 'com.test.pagestest.TestApi')
-data.setCell(0, 3, 5935);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testFacebookStatus')
-data.setCell(1, 2, 'com.test.pagestest.TestApi_02')
-data.setCell(1, 3, 1761);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testTheStatus')
-data.setCell(2, 2, 'com.test.pagestest.TestApi_02')
-data.setCell(2, 3, 386);
+data.setCell(0, 1, 'testPostRequest')
+data.setCell(0, 2, 'com.test.pagestest.PostRequest')
+data.setCell(0, 3, 3703);
 window.suiteTableData['TestAPI']= { tableData: data, tableDiv: 'times-div-TestAPI'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-TestAPI">
               </div> <!-- times-div-TestAPI -->
             </div> <!-- times-div -->
@@ -267,18 +208,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestAPI" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.basttest.TestApi</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateStatusCode</span>
-                <br/>
-                <span class="ignored-method-name">validateStatusCode1</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestAPI" class="panel">
@@ -287,25 +219,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.pagestest.TestApi</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.pagestest.PostRequest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testGetStatus</span>
+                <span class="method-name">testPostRequest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.test.pagestest.TestApi_02</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testFacebookStatus</span>
-                <span class="method-start">5975 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testTheStatus</span>
-                <span class="method-start">7745 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

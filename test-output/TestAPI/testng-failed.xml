@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestAPI]">
   <test name="TestAPI_01(failed)">
     <classes>
-      <class name="com.test.pagestest.TestApi_02">
+      <class name="com.test.pagestest.PostRequest">
         <methods>
-          <include name="testFacebookStatus"/>
-          <include name="testTheStatus"/>
+          <include name="testPostRequest"/>
         </methods>
-      </class> <!-- com.test.pagestest.TestApi_02 -->
+      </class> <!-- com.test.pagestest.PostRequest -->
     </classes>
   </test> <!-- TestAPI_01(failed) -->
 </suite> <!-- Failed suite [TestAPI] -->
