@@ -5,6 +5,7 @@
     <classes>
       <class name="com.test.pagestest.TestApi_02">
         <methods>
+          <include name="testFacebookStatus"/>
           <include name="testTheStatus"/>
         </methods>
       </class> <!-- com.test.pagestest.TestApi_02 -->

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-TestAPI" class="show-methods failed suite-TestAPI"> (show)</a> <!-- show-methods failed suite-TestAPI -->
                     </span>
                     <div class="method-list-content failed suite-TestAPI">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAPI" title="com.test.pagestest.TestApi_02" hash-for-method="testFacebookStatus">testFacebookStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestAPI" title="com.test.pagestest.TestApi_02" hash-for-method="testTheStatus">testTheStatus</a> <!-- method navigator-link -->
@@ -137,6 +142,17 @@
               <span class="class-name">com.test.pagestest.TestApi_02</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFacebookStatus">
+                  </a> <!-- testFacebookStatus -->
+                  <span class="method-name">testFacebookStatus</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at com.test.pagestest.TestApi_02.testFacebookStatus(TestApi_02.java:26)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testTheStatus">
@@ -219,20 +235,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testGetStatus')
 data.setCell(0, 2, 'com.test.pagestest.TestApi')
-data.setCell(0, 3, 5151);
+data.setCell(0, 3, 5935);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testTheStatus')
+data.setCell(1, 1, 'testFacebookStatus')
 data.setCell(1, 2, 'com.test.pagestest.TestApi_02')
-data.setCell(1, 3, 395);
+data.setCell(1, 3, 1761);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testTheStatus')
+data.setCell(2, 2, 'com.test.pagestest.TestApi_02')
+data.setCell(2, 3, 386);
 window.suiteTableData['TestAPI']= { tableData: data, tableDiv: 'times-div-TestAPI'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-TestAPI">
               </div> <!-- times-div-TestAPI -->
             </div> <!-- times-div -->
@@ -278,8 +298,14 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">testFacebookStatus</span>
+                <span class="method-start">5975 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testTheStatus</span>
-                <span class="method-start">5157 ms</span>
+                <span class="method-start">7745 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

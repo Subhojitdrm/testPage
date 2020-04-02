@@ -18,5 +18,14 @@ public class TestApi_02 {
 		Response response=httpRequest.request(Method.GET,"?q=selenium+interview+questions&oq=selenium+in&aqs=chrome.0.35i39j69i57j35i39j0l2j69i60l2j69i61.3486j0j4&sourceid=chrome&ie=UTF-8");
 		Assert.assertEquals(response.getStatusCode(), 200);
 	}
+	@Test
+	public void testFacebookStatus() {
+		RestAssured.baseURI="https://www.toolsqa.com/client-server/";
+		RequestSpecification httpRequest=RestAssured.given();
+		Response response=httpRequest.request(Method.GET,"http-request/");
+		Assert.assertEquals(response.getStatusCode(),400);
+		
+		
+	}
 
 }
