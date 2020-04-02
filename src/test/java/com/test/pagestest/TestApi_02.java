@@ -27,5 +27,14 @@ public class TestApi_02 {
 		
 		
 	}
+	@Test
+	public void testStatus() {
+	
+		RestAssured.baseURI="https://www.toolsqa.com/";
+		Response response=RestAssured.given().request(Method.GET,"rest-assured-tutorial/");
+		Assert.assertEquals(response.getStatusCode(), 200);
+		
+		
+	}
 
 }
